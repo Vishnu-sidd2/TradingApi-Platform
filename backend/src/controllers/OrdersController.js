@@ -5,7 +5,7 @@ class OrdersController {
     static placeOrder(req, res) {
         try {
             const { symbol, side, type, quantity, price } = req.body;
-
+            
             // Basic Validation
             if (!symbol || !side || !type || !quantity) {
                 return res.status(400).json({ error: 'Missing mandatory fields' });

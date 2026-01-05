@@ -74,12 +74,21 @@ Returns a list of available instruments with their current LTP.
     - BUY: Executes if Limit Price >= LTP.
     - SELL: Executes if Limit Price <= LTP.
 
+![Post Order Request](assets/post_order_req.png)
+
+![Order Response](assets/order_res.png)
+
 `GET /api/v1/orders/{orderId}`
 Fetch the status of a specific order.
 
 ### Trades & Portfolio
 `GET /api/v1/trades` - List all executed trades.
+
+![Trades List](assets/trades_res.png)
+
 `GET /api/v1/portfolio` - List current holdings with average price and current value.
+
+![Portfolio Response](assets/portfolio_res.png)
 
 ## Error Handling & Logging
 
